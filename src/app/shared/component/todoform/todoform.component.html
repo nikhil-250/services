@@ -1,0 +1,12 @@
+
+<div class="card card-body">
+    <form [formGroup]="addForm"  (ngSubmit)="onTodoAdd()">
+        <div class="form-group">
+            <label for="todoItem">TodoItem</label>
+            <input type="text" class="form-control" formControlName="todoitem" >
+        </div>
+        <div class="text-right">
+            <button class="btn btn-primary">Add todo</button>
+        </div>
+    </form>
+</div>
